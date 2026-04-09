@@ -11,3 +11,6 @@ class User(AbstractUser):
         managed = True
         verbose_name = 'User'
         verbose_name_plural = 'Users'
+
+    def __str__(self):
+        return self.username
