@@ -15,5 +15,6 @@ class UserAdmin(admin.ModelAdmin):
             },
         ),
         ("Permissions", {"fields": ("is_active", "is_staff")}),
+        ("Dates", {"fields": ("date_joined", "last_login")})
     )
     readonly_fields = ["date_joined", "last_login"]
