@@ -46,6 +46,7 @@ class Product(models.Model):
 
     class Meta:
         db_table = "products"
+        ordering = ("-created_at", )
         managed = True
         verbose_name = "Product"
         verbose_name_plural = "Products"
