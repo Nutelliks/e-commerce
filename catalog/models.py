@@ -1,7 +1,8 @@
 from django.db import models
+from core.models import BaseModel
 
 
-class Category(models.Model):
+class Category(BaseModel):
     name = models.CharField(max_length=200, unique=True, verbose_name="Название")
     slug = models.SlugField(
         max_length=250, unique=True, blank=True, null=True, verbose_name="URL"
@@ -27,7 +28,7 @@ class Category(models.Model):
         return self.name
 
 
-class Product(models.Model):
+class Product(BaseModel):
     category = models.ForeignKey(
         to="catalog.Category", on_delete=models.CASCADE, related_name="products"
     )
@@ -42,7 +43,6 @@ class Product(models.Model):
         upload_to="product_images/", blank=True, null=True, verbose_name="Изображение"
     )
     is_available = models.BooleanField(default=True, verbose_name="Доступно")
-    created_at = models.DateTimeField(auto_now_add=True, verbose_name="Дата создания")
 
     class Meta:
         db_table = "products"
