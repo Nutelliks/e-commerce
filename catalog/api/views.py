@@ -4,5 +4,5 @@ from ..models import Category
 
 
 class CategoryViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = Category.objects.filter(is_active=True)
+    queryset = Category.objects.filter(is_active=True, parent=None)
     serializer_class = CategorySerializer
