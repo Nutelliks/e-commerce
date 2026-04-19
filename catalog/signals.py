@@ -8,4 +8,5 @@ from .models import Category
 def delete_categories_cache(sender, instance, **kwargs):
     cache.delete("categories:list")
     cache.delete(f"categories:detail:{instance.slug}")
-    cache.delete(f"categories:detail:{instance.parent.slug}")
+    if instance.parent is not None:
+        cache.delete(f"categories:detail:{instance.parent.slug}")
