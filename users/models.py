@@ -7,10 +7,10 @@ class User(AbstractUser):
     delivery_address = models.CharField(max_length=100, blank=True, null=True)
 
     class Meta:
-        db_table = 'users'
+        db_table = "users"
         managed = True
-        verbose_name = 'User'
-        verbose_name_plural = 'Users'
+        verbose_name = "User"
+        verbose_name_plural = "Users"
 
     def __str__(self):
         return self.username

@@ -16,7 +16,7 @@ class CategoryAdmin(admin.ModelAdmin):
     search_fields = ("name", "slug")
     prepopulated_fields = {"slug": ("name",)}
     ordering = ("name",)
-    list_editable = ("is_active", )
+    list_editable = ("is_active",)
     inlines = (CategoryInline,)
 
 
@@ -29,7 +29,16 @@ class ProductAdmin(admin.ModelAdmin):
     list_editable = ("price", "stock")
     readonly_fields = ("created_at", "updated_at")
     fieldsets = (
-        ("Main info", {"fields": ("name", "slug", "category", )}),
+        (
+            "Main info",
+            {
+                "fields": (
+                    "name",
+                    "slug",
+                    "category",
+                )
+            },
+        ),
         (
             None,
             {"fields": ("description",)},

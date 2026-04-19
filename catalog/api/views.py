@@ -21,14 +21,14 @@ class CategoryViewSet(CacheMixin, viewsets.ReadOnlyModelViewSet):
 
     def list(self, request, *args, **kwargs):
         builder = lambda: self.get_serializer(self.get_queryset(), many=True).data
-        data = self.get_set_cache("categories:list", 60*15, builder)
+        data = self.get_set_cache("categories:list", 60 * 15, builder)
 
         return Response(data)
 
     def retrieve(self, request, *args, **kwargs):
         builder = lambda: self.get_serializer(self.get_object()).data
         data = self.get_set_cache(
-            f"categories:detail:{self.kwargs[self.lookup_url_kwarg]}", 60*15, builder
+            f"categories:detail:{self.kwargs[self.lookup_url_kwarg]}", 60 * 15, builder
         )
 
         return Response(data)

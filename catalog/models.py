@@ -37,7 +37,9 @@ class Product(BaseModel):
         max_length=200, unique=True, blank=True, null=True, verbose_name="URL"
     )
     description = models.TextField(blank=True, null=True, verbose_name="Описание")
-    price = models.DecimalField(max_digits=7, decimal_places=2, default=0.00, verbose_name="Цена")
+    price = models.DecimalField(
+        max_digits=7, decimal_places=2, default=0.00, verbose_name="Цена"
+    )
     stock = models.PositiveIntegerField(default=0, verbose_name="Количество")
     image = models.ImageField(
         upload_to="product_images/", blank=True, null=True, verbose_name="Изображение"
@@ -46,7 +48,7 @@ class Product(BaseModel):
 
     class Meta:
         db_table = "products"
-        ordering = ("-created_at", )
+        ordering = ("-created_at",)
         managed = True
         verbose_name = "Product"
         verbose_name_plural = "Products"
