@@ -1,12 +1,12 @@
-from django.utils.decorators import method_decorator
-from django.views.decorators.cache import cache_page
 from rest_framework import viewsets
+from rest_framework.response import Response
 from django.db.models import Prefetch
+from common.mixins import CacheMixin
 from .serializers import CategorySerializer
 from ..models import Category
 
 
-class CategoryViewSet(viewsets.ReadOnlyModelViewSet):
+class CategoryViewSet(CacheMixin, viewsets.ReadOnlyModelViewSet):
     queryset = Category.objects.filter(is_active=True).prefetch_related(
         Prefetch("children", queryset=Category.objects.filter(is_active=True))
     )
@@ -18,11 +18,17 @@ class CategoryViewSet(viewsets.ReadOnlyModelViewSet):
         if self.action == "list":
             return self.queryset.filter(parent=None)
         return self.queryset
-    
-    @method_decorator(cache_page(60 * 15))
+
     def list(self, request, *args, **kwargs):
-        return super().list(request, *args, **kwargs)
-    
-    @method_decorator(cache_page(60 * 15))
+        builder = lambda: self.get_serializer(self.get_queryset(), many=True).data
+        data = self.get_set_cache("categories:list", 60*15, builder)
+
+        return Response(data)
+
     def retrieve(self, request, *args, **kwargs):
-        return super().retrieve(request, *args, **kwargs)
+        builder = lambda: self.get_serializer(self.get_object()).data
+        data = self.get_set_cache(
+            f"categories:detail:{self.kwargs[self.lookup_url_kwarg]}", 60*15, builder
+        )
+
+        return Response(data)
