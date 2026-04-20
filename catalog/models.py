@@ -30,7 +30,7 @@ class Category(BaseModel):
 
 class Product(BaseModel):
     category = models.ForeignKey(
-        to="catalog.Category", on_delete=models.CASCADE, related_name="products"
+        to="catalog.Category", on_delete=models.CASCADE, db_index=True, related_name="products"
     )
     name = models.CharField(max_length=200, unique=True, verbose_name="Название")
     slug = models.SlugField(
@@ -38,7 +38,7 @@ class Product(BaseModel):
     )
     description = models.TextField(blank=True, null=True, verbose_name="Описание")
     price = models.DecimalField(
-        max_digits=7, decimal_places=2, default=0.00, verbose_name="Цена"
+        max_digits=7, decimal_places=2, default=0.00, db_index=True, verbose_name="Цена"
     )
     stock = models.PositiveIntegerField(default=0, verbose_name="Количество")
     image = models.ImageField(
