@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'debug_toolbar',
+    'django_filters',
 
     'core',
     'users',
@@ -160,3 +161,11 @@ INTERNAL_IPS = [
 
 
 AUTH_USER_MODEL = 'users.User'
+
+
+
+# --- REST-FRAMEWORK CONFIG ---
+
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
+}
