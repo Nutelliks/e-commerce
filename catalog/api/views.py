@@ -2,8 +2,10 @@ from rest_framework import viewsets
 from rest_framework.response import Response
 from django.db.models import Prefetch
 from common.mixins import CacheMixin
-from .serializers import CategorySerializer
-from ..models import Category
+from .serializers import CategorySerializer, ProductSerializer
+from ..models import Category, Product
+from ..filters import ProductFilter
+from rest_framework.filters import OrderingFilter
 
 
 class CategoryViewSet(CacheMixin, viewsets.ReadOnlyModelViewSet):
@@ -31,3 +33,11 @@ class CategoryViewSet(CacheMixin, viewsets.ReadOnlyModelViewSet):
         data = self.get_set_cache(f"categories:detail:{slug}", 60 * 15, builder)
 
         return Response(data)
+
+
+class ProductViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = Product.objects.filter(is_active=True)
+    serializer_class = ProductSerializer
+    filterset_class = ProductFilter
+    search_fieeds = ["name", "description"]
+    ordering_fields = ["price", "created_at", "name"]
