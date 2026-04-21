@@ -38,5 +38,5 @@ class ProductViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Product.objects.filter(is_active=True)
     serializer_class = ProductSerializer
     filterset_class = ProductFilter
-    search_fieeds = ["name", "description"]
+    search_fields = ["name", "description"]
     ordering_fields = ["price", "created_at", "name"]
