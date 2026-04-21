@@ -5,7 +5,6 @@ from common.mixins import CacheMixin
 from .serializers import CategorySerializer, ProductSerializer
 from ..models import Category, Product
 from ..filters import ProductFilter
-from rest_framework.filters import OrderingFilter
 
 
 class CategoryViewSet(CacheMixin, viewsets.ReadOnlyModelViewSet):

@@ -4,8 +4,8 @@ from .models import Product
 
 
 class ProductFilter(django_filters.FilterSet):
-    price_min = django_filters.NumberFilter(field_name="price", lookup_expr="gte", method="price_validation")
-    price_max = django_filters.NumberFilter(field_name="price", lookup_expr="lte", method="price_validation")
+    price_min = django_filters.NumberFilter(field_name="price", lookup_expr="gte")
+    price_max = django_filters.NumberFilter(field_name="price", lookup_expr="lte")
 
     class Meta:
         model = Product
