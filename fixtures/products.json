@@ -1,0 +1,1702 @@
+[
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "category": 2,
+      "name": "iPhone 15 Pro Max",
+      "slug": "iphone-15-pro-max",
+      "description": "Флагманский смартфон Apple с процессором A17 Pro",
+      "price": "1299.99",
+      "stock": 45,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-01T10:00:00Z",
+      "updated_at": "2024-01-01T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "category": 2,
+      "name": "Samsung Galaxy S24",
+      "slug": "samsung-galaxy-s24",
+      "description": "Премиум смартфон Samsung с AMOLED экраном",
+      "price": "999.99",
+      "stock": 56,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-02T10:00:00Z",
+      "updated_at": "2024-01-02T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "category": 2,
+      "name": "Google Pixel 8",
+      "slug": "google-pixel-8",
+      "description": "Смартфон Google с улучшенной камерой и AI",
+      "price": "799.99",
+      "stock": 38,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-03T10:00:00Z",
+      "updated_at": "2024-01-03T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "category": 2,
+      "name": "OnePlus 12",
+      "slug": "oneplus-12",
+      "description": "Быстрый смартфон с Snapdragon 8 Gen 3",
+      "price": "649.99",
+      "stock": 62,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-04T10:00:00Z",
+      "updated_at": "2024-01-04T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+      "category": 2,
+      "name": "Xiaomi 14 Ultra",
+      "slug": "xiaomi-14-ultra",
+      "description": "Мощный смартфон с камерой Leica",
+      "price": "749.99",
+      "stock": 78,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-05T10:00:00Z",
+      "updated_at": "2024-01-05T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 6,
+    "fields": {
+      "category": 2,
+      "name": "iPhone 15",
+      "slug": "iphone-15",
+      "description": "Стандартный iPhone 15 с A17 Pro",
+      "price": "799.99",
+      "stock": 0,
+      "image": "",
+      "is_available": false,
+      "created_at": "2024-01-06T10:00:00Z",
+      "updated_at": "2024-01-06T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 7,
+    "fields": {
+      "category": 2,
+      "name": "Samsung Galaxy A54",
+      "slug": "samsung-galaxy-a54",
+      "description": "Бюджетный смартфон Samsung",
+      "price": "399.99",
+      "stock": 120,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-07T10:00:00Z",
+      "updated_at": "2024-01-07T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 8,
+    "fields": {
+      "category": 2,
+      "name": "Motorola Moto G84",
+      "slug": "motorola-moto-g84",
+      "description": "Надежный смартфон среднего класса",
+      "price": "349.99",
+      "stock": 85,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-08T10:00:00Z",
+      "updated_at": "2024-01-08T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 9,
+    "fields": {
+      "category": 2,
+      "name": "Nokia G42",
+      "slug": "nokia-g42",
+      "description": "Практичный телефон с долгой батареей",
+      "price": "299.99",
+      "stock": 45,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-09T10:00:00Z",
+      "updated_at": "2024-01-09T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 10,
+    "fields": {
+      "category": 2,
+      "name": "Realme 12 Pro",
+      "slug": "realme-12-pro",
+      "description": "Смартфон с хорошей камерой и батареей",
+      "price": "449.99",
+      "stock": 67,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-10T10:00:00Z",
+      "updated_at": "2024-01-10T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 11,
+    "fields": {
+      "category": 3,
+      "name": "MacBook Pro 16 M3 Max",
+      "slug": "macbook-pro-16-m3-max",
+      "description": "Мощный ноутбук Apple для профессионалов",
+      "price": "3499.99",
+      "stock": 12,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-11T10:00:00Z",
+      "updated_at": "2024-01-11T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 12,
+    "fields": {
+      "category": 3,
+      "name": "Dell XPS 15",
+      "slug": "dell-xps-15",
+      "description": "Премиум ноутбук для творчества и работы",
+      "price": "2199.99",
+      "stock": 18,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-12T10:00:00Z",
+      "updated_at": "2024-01-12T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 13,
+    "fields": {
+      "category": 3,
+      "name": "ASUS VivoBook 15",
+      "slug": "asus-vivobook-15",
+      "description": "Доступный ноутбук для повседневной работы",
+      "price": "649.99",
+      "stock": 34,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-13T10:00:00Z",
+      "updated_at": "2024-01-13T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 14,
+    "fields": {
+      "category": 3,
+      "name": "Lenovo ThinkPad X1 Carbon",
+      "slug": "lenovo-thinkpad-x1-carbon",
+      "description": "Бизнес-ноутбук с отличной клавиатурой",
+      "price": "1799.99",
+      "stock": 22,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-14T10:00:00Z",
+      "updated_at": "2024-01-14T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 15,
+    "fields": {
+      "category": 3,
+      "name": "HP Pavilion 15",
+      "slug": "hp-pavilion-15",
+      "description": "Универсальный ноутбук для всех задач",
+      "price": "799.99",
+      "stock": 28,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-15T10:00:00Z",
+      "updated_at": "2024-01-15T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 16,
+    "fields": {
+      "category": 3,
+      "name": "Acer Swift 3",
+      "slug": "acer-swift-3",
+      "description": "Легкий и мощный ноутбук",
+      "price": "899.99",
+      "stock": 0,
+      "image": "",
+      "is_available": false,
+      "created_at": "2024-01-16T10:00:00Z",
+      "updated_at": "2024-01-16T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 17,
+    "fields": {
+      "category": 4,
+      "name": "USB-C кабель 2м",
+      "slug": "usb-c-kabel-2m",
+      "description": "Прочный кабель для зарядки и передачи данных",
+      "price": "12.99",
+      "stock": 500,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-17T10:00:00Z",
+      "updated_at": "2024-01-17T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 18,
+    "fields": {
+      "category": 4,
+      "name": "Защитное стекло для iPhone 15",
+      "slug": "zaschitnoye-steklo-dlya-iphone-15",
+      "description": "Закаленное защитное стекло",
+      "price": "9.99",
+      "stock": 350,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-18T10:00:00Z",
+      "updated_at": "2024-01-18T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 19,
+    "fields": {
+      "category": 4,
+      "name": "Чехол для смартфона",
+      "slug": "chekhol-dlya-smartfona",
+      "description": "Защитный чехол из силикона",
+      "price": "14.99",
+      "stock": 280,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-19T10:00:00Z",
+      "updated_at": "2024-01-19T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 20,
+    "fields": {
+      "category": 4,
+      "name": "Беспроводная зарядка Qi",
+      "slug": "besprovodnaya-zaryadka-qi",
+      "description": "Быстрая зарядка для смартфонов",
+      "price": "24.99",
+      "stock": 120,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-20T10:00:00Z",
+      "updated_at": "2024-01-20T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 21,
+    "fields": {
+      "category": 4,
+      "name": "Power Bank 20000 mAh",
+      "slug": "power-bank-20000-mah",
+      "description": "Портативное зарядное устройство",
+      "price": "29.99",
+      "stock": 95,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-21T10:00:00Z",
+      "updated_at": "2024-01-21T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 22,
+    "fields": {
+      "category": 4,
+      "name": "Наушники Bluetooth",
+      "slug": "naushniki-bluetooth",
+      "description": "Беспроводные наушники с шумоподавлением",
+      "price": "79.99",
+      "stock": 150,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-22T10:00:00Z",
+      "updated_at": "2024-01-22T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 23,
+    "fields": {
+      "category": 4,
+      "name": "Сумка для ноутбука 15.6",
+      "slug": "sumka-dlya-noutbuka-15-6",
+      "description": "Водоустойчивая сумка для ноутбука",
+      "price": "44.99",
+      "stock": 88,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-23T10:00:00Z",
+      "updated_at": "2024-01-23T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 24,
+    "fields": {
+      "category": 4,
+      "name": "Адаптер HDMI",
+      "slug": "adapter-hdmi",
+      "description": "Переходник для подключения монитора",
+      "price": "15.99",
+      "stock": 200,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-24T10:00:00Z",
+      "updated_at": "2024-01-24T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 25,
+    "fields": {
+      "category": 4,
+      "name": "USB Hub 7 портов",
+      "slug": "usb-hub-7-portov",
+      "description": "Расширитель портов USB",
+      "price": "34.99",
+      "stock": 76,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-25T10:00:00Z",
+      "updated_at": "2024-01-25T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 26,
+    "fields": {
+      "category": 6,
+      "name": "Рубашка белая мужская",
+      "slug": "rubashka-belaya-muzhskaya",
+      "description": "Классическая белая рубашка из хлопка",
+      "price": "49.99",
+      "stock": 180,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-26T10:00:00Z",
+      "updated_at": "2024-01-26T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 27,
+    "fields": {
+      "category": 6,
+      "name": "Джинсы синие мужские",
+      "slug": "dzhinsy-sinie-muzhskie",
+      "description": "Прочные джинсы для повседневной носки",
+      "price": "59.99",
+      "stock": 200,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-27T10:00:00Z",
+      "updated_at": "2024-01-27T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 28,
+    "fields": {
+      "category": 6,
+      "name": "Футболка черная мужская",
+      "slug": "futbolka-chernaya-muzhskaya",
+      "description": "Комфортная футболка из качественного хлопка",
+      "price": "24.99",
+      "stock": 350,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-28T10:00:00Z",
+      "updated_at": "2024-01-28T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 29,
+    "fields": {
+      "category": 6,
+      "name": "Худи спортивное мужское",
+      "slug": "khudi-sportivnoye-muzhskoye",
+      "description": "Удобное худи для спорта и отдыха",
+      "price": "64.99",
+      "stock": 120,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-29T10:00:00Z",
+      "updated_at": "2024-01-29T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 30,
+    "fields": {
+      "category": 6,
+      "name": "Пиджак мужской черный",
+      "slug": "pidzhak-muzhskoy-cherniy",
+      "description": "Стильный пиджак для деловых встреч",
+      "price": "129.99",
+      "stock": 45,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-30T10:00:00Z",
+      "updated_at": "2024-01-30T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 31,
+    "fields": {
+      "category": 6,
+      "name": "Носки мужские (упаковка 5 пар)",
+      "slug": "noski-muzhskie-upakovka-5-par",
+      "description": "Удобные носки из смеси хлопка",
+      "price": "12.99",
+      "stock": 500,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-01-31T10:00:00Z",
+      "updated_at": "2024-01-31T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 32,
+    "fields": {
+      "category": 6,
+      "name": "Брюки мужские серые",
+      "slug": "bryuki-muzhskie-seriye",
+      "description": "Классические брюки для работы",
+      "price": "74.99",
+      "stock": 0,
+      "image": "",
+      "is_available": false,
+      "created_at": "2024-02-01T10:00:00Z",
+      "updated_at": "2024-02-01T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 33,
+    "fields": {
+      "category": 7,
+      "name": "Платье женское цветное",
+      "slug": "plate-zhenskoye-tsvetnoye",
+      "description": "Красивое платье для повседневной носки",
+      "price": "79.99",
+      "stock": 85,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-02T10:00:00Z",
+      "updated_at": "2024-02-02T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 34,
+    "fields": {
+      "category": 7,
+      "name": "Блузка женская белая",
+      "slug": "bluzkа-zhenskaya-belaya",
+      "description": "Элегантная блузка из натуральной ткани",
+      "price": "54.99",
+      "stock": 120,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-03T10:00:00Z",
+      "updated_at": "2024-02-03T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 35,
+    "fields": {
+      "category": 7,
+      "name": "Джинсы женские черные",
+      "slug": "dzhinsy-zhenskiye-cherniye",
+      "description": "Стильные джинсы облегающего кроя",
+      "price": "69.99",
+      "stock": 95,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-04T10:00:00Z",
+      "updated_at": "2024-02-04T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 36,
+    "fields": {
+      "category": 7,
+      "name": "Юбка женская красная",
+      "slug": "yubka-zhenskaya-krasnaya",
+      "description": "Модная юбка для вечерних выходов",
+      "price": "64.99",
+      "stock": 45,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-05T10:00:00Z",
+      "updated_at": "2024-02-05T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 37,
+    "fields": {
+      "category": 7,
+      "name": "Леггинсы женские",
+      "slug": "legginsy-zhenskiye",
+      "description": "Удобные леггинсы для спорта",
+      "price": "34.99",
+      "stock": 200,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-06T10:00:00Z",
+      "updated_at": "2024-02-06T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 38,
+    "fields": {
+      "category": 7,
+      "name": "Свитер женский розовый",
+      "slug": "sviter-zhenskiy-rozoviy",
+      "description": "Мягкий свитер для холодного времени года",
+      "price": "59.99",
+      "stock": 110,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-07T10:00:00Z",
+      "updated_at": "2024-02-07T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 39,
+    "fields": {
+      "category": 7,
+      "name": "Куртка женская зимняя",
+      "slug": "zhenskaya-zimnyaya-kurtka",
+      "description": "Теплая куртка с утеплением",
+      "price": "149.99",
+      "stock": 0,
+      "image": "",
+      "is_available": false,
+      "created_at": "2024-02-08T10:00:00Z",
+      "updated_at": "2024-02-08T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 40,
+    "fields": {
+      "category": 7,
+      "name": "Босоножки женские",
+      "slug": "bosonozhki-zhenskiye",
+      "description": "Летние босоножки удобного кроя",
+      "price": "44.99",
+      "stock": 78,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-09T10:00:00Z",
+      "updated_at": "2024-02-09T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 41,
+    "fields": {
+      "category": 8,
+      "name": "Детская футболка 4-6 лет",
+      "slug": "detskaya-futbolka-4-6-let",
+      "description": "Мягкая футболка для детей",
+      "price": "19.99",
+      "stock": 250,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-10T10:00:00Z",
+      "updated_at": "2024-02-10T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 42,
+    "fields": {
+      "category": 8,
+      "name": "Детская куртка 6-8 лет",
+      "slug": "detskaya-kurtka-6-8-let",
+      "description": "Легкая куртка для весны и осени",
+      "price": "54.99",
+      "stock": 120,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-11T10:00:00Z",
+      "updated_at": "2024-02-11T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 43,
+    "fields": {
+      "category": 8,
+      "name": "Детские джинсы 8-10 лет",
+      "slug": "detskie-dzhinsy-8-10-let",
+      "description": "Прочные джинсы для активных детей",
+      "price": "44.99",
+      "stock": 90,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-12T10:00:00Z",
+      "updated_at": "2024-02-12T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 44,
+    "fields": {
+      "category": 8,
+      "name": "Детский свитер 4-6 лет",
+      "slug": "detskiy-sviter-4-6-let",
+      "description": "Теплый свитер для прохладной погоды",
+      "price": "34.99",
+      "stock": 80,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-13T10:00:00Z",
+      "updated_at": "2024-02-13T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 45,
+    "fields": {
+      "category": 8,
+      "name": "Детские носки (упаковка 6 пар)",
+      "slug": "detskie-noski-upakovka-6-par",
+      "description": "Удобные носки для детей",
+      "price": "9.99",
+      "stock": 400,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-14T10:00:00Z",
+      "updated_at": "2024-02-14T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 46,
+    "fields": {
+      "category": 8,
+      "name": "Детская пижама",
+      "slug": "detskaya-pizhama",
+      "description": "Уютная пижама для сна",
+      "price": "29.99",
+      "stock": 110,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-15T10:00:00Z",
+      "updated_at": "2024-02-15T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 47,
+    "fields": {
+      "category": 8,
+      "name": "Детское платье праздничное",
+      "slug": "detskoe-plate-prazdnichnoe",
+      "description": "Красивое платье для праздников",
+      "price": "59.99",
+      "stock": 0,
+      "image": "",
+      "is_available": false,
+      "created_at": "2024-02-16T10:00:00Z",
+      "updated_at": "2024-02-16T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 48,
+    "fields": {
+      "category": 10,
+      "name": "Кровать двойная дубовая",
+      "slug": "krovat-dvoinaya-dubovaya",
+      "description": "Прочная кровать из натурального дуба",
+      "price": "599.99",
+      "stock": 8,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-17T10:00:00Z",
+      "updated_at": "2024-02-17T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 49,
+    "fields": {
+      "category": 10,
+      "name": "Диван серый",
+      "slug": "divan-seriy",
+      "description": "Удобный диван для гостиной",
+      "price": "799.99",
+      "stock": 5,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-18T10:00:00Z",
+      "updated_at": "2024-02-18T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 50,
+    "fields": {
+      "category": 10,
+      "name": "Стол обеденный",
+      "slug": "stol-obedennyy",
+      "description": "Стол для обеда на 6 человек",
+      "price": "349.99",
+      "stock": 12,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-19T10:00:00Z",
+      "updated_at": "2024-02-19T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 51,
+    "fields": {
+      "category": 10,
+      "name": "Стул офисный",
+      "slug": "stul-ofisnyy",
+      "description": "Эргономичный офисный стул",
+      "price": "199.99",
+      "stock": 28,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-20T10:00:00Z",
+      "updated_at": "2024-02-20T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 52,
+    "fields": {
+      "category": 10,
+      "name": "Шкаф купе белый",
+      "slug": "shkaf-kupe-belyy",
+      "description": "Просторный шкаф с зеркалом",
+      "price": "449.99",
+      "stock": 6,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-21T10:00:00Z",
+      "updated_at": "2024-02-21T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 53,
+    "fields": {
+      "category": 10,
+      "name": "Тумбочка прикроватная",
+      "slug": "tumboчka-prikrovetnaya",
+      "description": "Удобная тумбочка для спальни",
+      "price": "89.99",
+      "stock": 0,
+      "image": "",
+      "is_available": false,
+      "created_at": "2024-02-22T10:00:00Z",
+      "updated_at": "2024-02-22T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 54,
+    "fields": {
+      "category": 10,
+      "name": "Книжная полка",
+      "slug": "knizhnaya-polka",
+      "description": "Полка для хранения книг",
+      "price": "64.99",
+      "stock": 18,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-23T10:00:00Z",
+      "updated_at": "2024-02-23T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 55,
+    "fields": {
+      "category": 11,
+      "name": "Комплект постельного белья двойной",
+      "slug": "komplekt-postealnogo-beya-dvoinoy",
+      "description": "Постельное белье из 100% хлопка",
+      "price": "49.99",
+      "stock": 85,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-24T10:00:00Z",
+      "updated_at": "2024-02-24T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 56,
+    "fields": {
+      "category": 11,
+      "name": "Подушка лебяжий пух",
+      "slug": "podushka-lebyazhiy-puh",
+      "description": "Удобная подушка для здорового сна",
+      "price": "34.99",
+      "stock": 120,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-25T10:00:00Z",
+      "updated_at": "2024-02-25T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 57,
+    "fields": {
+      "category": 11,
+      "name": "Одеяло теплое",
+      "slug": "odeyalo-teploye",
+      "description": "Теплое одеяло для зимних ночей",
+      "price": "54.99",
+      "stock": 95,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-26T10:00:00Z",
+      "updated_at": "2024-02-26T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 58,
+    "fields": {
+      "category": 11,
+      "name": "Простыня 200х220",
+      "slug": "prostyna-200kh220",
+      "description": "Качественная хлопковая простыня",
+      "price": "24.99",
+      "stock": 140,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-27T10:00:00Z",
+      "updated_at": "2024-02-27T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 59,
+    "fields": {
+      "category": 11,
+      "name": "Наволочка декоративная",
+      "slug": "navolochka-dekorativnaya",
+      "description": "Красивая декоративная наволочка",
+      "price": "14.99",
+      "stock": 200,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-02-28T10:00:00Z",
+      "updated_at": "2024-02-28T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 60,
+    "fields": {
+      "category": 11,
+      "name": "Плед вязаный",
+      "slug": "pled-vyazanyy",
+      "description": "Уютный вязаный плед",
+      "price": "44.99",
+      "stock": 0,
+      "image": "",
+      "is_available": false,
+      "created_at": "2024-02-29T10:00:00Z",
+      "updated_at": "2024-02-29T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 61,
+    "fields": {
+      "category": 12,
+      "name": "Кастрюля 3л из нержавейки",
+      "slug": "kastrulya-3l-iz-nerzhaveyki",
+      "description": "Прочная кастрюля для готовки",
+      "price": "34.99",
+      "stock": 85,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-01T10:00:00Z",
+      "updated_at": "2024-03-01T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 62,
+    "fields": {
+      "category": 12,
+      "name": "Сковорода антипригарная",
+      "slug": "skovoroda-antiprigarnaya",
+      "description": "Удобная сковорода для готовки",
+      "price": "29.99",
+      "stock": 110,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-02T10:00:00Z",
+      "updated_at": "2024-03-02T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 63,
+    "fields": {
+      "category": 12,
+      "name": "Набор ножей 7 штук",
+      "slug": "nabor-nozhey-7-shtuk",
+      "description": "Профессиональный набор кухонных ножей",
+      "price": "49.99",
+      "stock": 60,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-03T10:00:00Z",
+      "updated_at": "2024-03-03T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 64,
+    "fields": {
+      "category": 12,
+      "name": "Миксер ручной электрический",
+      "slug": "mikser-ruchnoy-elektricheskiy",
+      "description": "Удобный миксер для быстрого замешивания",
+      "price": "44.99",
+      "stock": 45,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-04T10:00:00Z",
+      "updated_at": "2024-03-04T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 65,
+    "fields": {
+      "category": 12,
+      "name": "Блендер стационарный",
+      "slug": "blender-statsionarnyy",
+      "description": "Мощный блендер для напитков",
+      "price": "69.99",
+      "stock": 35,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-05T10:00:00Z",
+      "updated_at": "2024-03-05T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 66,
+    "fields": {
+      "category": 12,
+      "name": "Доска разделочная пластиковая",
+      "slug": "doska-razydelochhnaya-plastikovaya",
+      "description": "Легкая доска для нарезки продуктов",
+      "price": "12.99",
+      "stock": 250,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-06T10:00:00Z",
+      "updated_at": "2024-03-06T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 67,
+    "fields": {
+      "category": 12,
+      "name": "Чайник электрический",
+      "slug": "chaynik-elektricheskiy",
+      "description": "Быстрый электрический чайник",
+      "price": "34.99",
+      "stock": 0,
+      "image": "",
+      "is_available": false,
+      "created_at": "2024-03-07T10:00:00Z",
+      "updated_at": "2024-03-07T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 68,
+    "fields": {
+      "category": 14,
+      "name": "Война и мир Л.Н. Толстой",
+      "slug": "voyna-i-mir-ln-tolstoy",
+      "description": "Классический роман в твердом переплете",
+      "price": "24.99",
+      "stock": 120,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-08T10:00:00Z",
+      "updated_at": "2024-03-08T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 69,
+    "fields": {
+      "category": 14,
+      "name": "Преступление и наказание Достоевский",
+      "slug": "prestuplenie-i-nakazanie-dostoevskiy",
+      "description": "Психологический роман в оригинальном переводе",
+      "price": "19.99",
+      "stock": 95,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-09T10:00:00Z",
+      "updated_at": "2024-03-09T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 70,
+    "fields": {
+      "category": 14,
+      "name": "Мастер и Маргарита М.А. Булгаков",
+      "slug": "master-i-margarita-ma-bulgakov",
+      "description": "Магический реализм в советской литературе",
+      "price": "22.99",
+      "stock": 110,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-10T10:00:00Z",
+      "updated_at": "2024-03-10T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 71,
+    "fields": {
+      "category": 14,
+      "name": "Обломов И.А. Гончаров",
+      "slug": "oblomov-ia-goncharov",
+      "description": "Классический роман о русской лени",
+      "price": "17.99",
+      "stock": 85,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-11T10:00:00Z",
+      "updated_at": "2024-03-11T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 72,
+    "fields": {
+      "category": 14,
+      "name": "1984 Джордж Оруэлл",
+      "slug": "1984-dzhordzh-oruell",
+      "description": "Антиутопия о тоталитарном государстве",
+      "price": "18.99",
+      "stock": 0,
+      "image": "",
+      "is_available": false,
+      "created_at": "2024-03-12T10:00:00Z",
+      "updated_at": "2024-03-12T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 73,
+    "fields": {
+      "category": 14,
+      "name": "О дивный новый мир О. Хаксли",
+      "slug": "o-divnyy-novyy-mir-o-haksli",
+      "description": "Научно-фантастическая антиутопия",
+      "price": "19.99",
+      "stock": 72,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-13T10:00:00Z",
+      "updated_at": "2024-03-13T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 74,
+    "fields": {
+      "category": 14,
+      "name": "Граф Монте-Кристо Александр Дюма",
+      "slug": "graf-monte-kristo-aleksandr-dyuma",
+      "description": "Приключенческий роман о мести и прощении",
+      "price": "21.99",
+      "stock": 100,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-14T10:00:00Z",
+      "updated_at": "2024-03-14T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 75,
+    "fields": {
+      "category": 14,
+      "name": "Три мушкетера Александр Дюма",
+      "slug": "tri-mushketera-aleksandr-dyuma",
+      "description": "Классический приключенческий роман",
+      "price": "20.99",
+      "stock": 88,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-15T10:00:00Z",
+      "updated_at": "2024-03-15T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 76,
+    "fields": {
+      "category": 15,
+      "name": "Гантели 5 кг пара",
+      "slug": "ganteli-5-kg-para",
+      "description": "Чугунные гантели для тренировки",
+      "price": "39.99",
+      "stock": 150,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-16T10:00:00Z",
+      "updated_at": "2024-03-16T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 77,
+    "fields": {
+      "category": 15,
+      "name": "Штанга олимпийская",
+      "slug": "shtanga-olimpiyskaya",
+      "description": "Профессиональная олимпийская штанга",
+      "price": "199.99",
+      "stock": 18,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-17T10:00:00Z",
+      "updated_at": "2024-03-17T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 78,
+    "fields": {
+      "category": 15,
+      "name": "Коврик для йоги",
+      "slug": "kovrik-dlya-yogi",
+      "description": "Нескользящий коврик для йоги",
+      "price": "24.99",
+      "stock": 200,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-18T10:00:00Z",
+      "updated_at": "2024-03-18T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 79,
+    "fields": {
+      "category": 15,
+      "name": "Мяч для фитнеса",
+      "slug": "myach-dlya-fitnesa",
+      "description": "Упругий мяч для упражнений",
+      "price": "34.99",
+      "stock": 120,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-19T10:00:00Z",
+      "updated_at": "2024-03-19T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 80,
+    "fields": {
+      "category": 15,
+      "name": "Скакалка спортивная",
+      "slug": "skakalka-sportivnaya",
+      "description": "Стальная скакалка для кардиотренировок",
+      "price": "14.99",
+      "stock": 250,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-20T10:00:00Z",
+      "updated_at": "2024-03-20T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 81,
+    "fields": {
+      "category": 15,
+      "name": "Велотренажер домашний",
+      "slug": "velotrenazher-domashniy",
+      "description": "Компактный велотренажер для дома",
+      "price": "299.99",
+      "stock": 0,
+      "image": "",
+      "is_available": false,
+      "created_at": "2024-03-21T10:00:00Z",
+      "updated_at": "2024-03-21T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 82,
+    "fields": {
+      "category": 15,
+      "name": "Беговая дорожка компактная",
+      "slug": "begovaya-dorozhka-kompaktnaya",
+      "description": "Складная беговая дорожка для дома",
+      "price": "399.99",
+      "stock": 8,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-22T10:00:00Z",
+      "updated_at": "2024-03-22T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 83,
+    "fields": {
+      "category": 15,
+      "name": "Эспандер груди",
+      "slug": "espander-grudi",
+      "description": "Упругий эспандер для тренировки мышц",
+      "price": "19.99",
+      "stock": 180,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-23T10:00:00Z",
+      "updated_at": "2024-03-23T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 84,
+    "fields": {
+      "category": 15,
+      "name": "Спортивные перчатки боксерские",
+      "slug": "sportivnye-perchatki-bokserskie",
+      "description": "Профессиональные боксерские перчатки",
+      "price": "79.99",
+      "stock": 95,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-24T10:00:00Z",
+      "updated_at": "2024-03-24T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 85,
+    "fields": {
+      "category": 1,
+      "name": "Монитор 24 дюйма Full HD",
+      "slug": "monitor-24-dyuyma-full-hd",
+      "description": "IPS монитор для работы и развлечений",
+      "price": "199.99",
+      "stock": 45,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-25T10:00:00Z",
+      "updated_at": "2024-03-25T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 86,
+    "fields": {
+      "category": 1,
+      "name": "Монитор 27 дюймов 4K",
+      "slug": "monitor-27-dyuymov-4k",
+      "description": "Профессиональный 4K монитор",
+      "price": "399.99",
+      "stock": 22,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-26T10:00:00Z",
+      "updated_at": "2024-03-26T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 87,
+    "fields": {
+      "category": 1,
+      "name": "Клавиатура механическая",
+      "slug": "klaviatura-mehanicheskaya",
+      "description": "Профессиональная механическая клавиатура",
+      "price": "129.99",
+      "stock": 60,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-27T10:00:00Z",
+      "updated_at": "2024-03-27T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 88,
+    "fields": {
+      "category": 1,
+      "name": "Мышь игровая",
+      "slug": "mysh-igrovaya",
+      "description": "Быстрая мышь с высокой точностью",
+      "price": "59.99",
+      "stock": 140,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-28T10:00:00Z",
+      "updated_at": "2024-03-28T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 89,
+    "fields": {
+      "category": 1,
+      "name": "Веб-камера 1080p",
+      "slug": "veb-kamera-1080p",
+      "description": "Четкая веб-камера для видеоконференций",
+      "price": "44.99",
+      "stock": 85,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-29T10:00:00Z",
+      "updated_at": "2024-03-29T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 90,
+    "fields": {
+      "category": 1,
+      "name": "Микрофон студийный",
+      "slug": "mikrofon-studiynyy",
+      "description": "Профессиональный микрофон для записи",
+      "price": "149.99",
+      "stock": 0,
+      "image": "",
+      "is_available": false,
+      "created_at": "2024-03-30T10:00:00Z",
+      "updated_at": "2024-03-30T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 91,
+    "fields": {
+      "category": 1,
+      "name": "SSD диск 1TB",
+      "slug": "ssd-disk-1tb",
+      "description": "Быстрый SSD диск для хранения данных",
+      "price": "89.99",
+      "stock": 75,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-03-31T10:00:00Z",
+      "updated_at": "2024-03-31T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 92,
+    "fields": {
+      "category": 1,
+      "name": "Винчестер 2TB",
+      "slug": "vintchester-2tb",
+      "description": "Надежный жесткий диск на 2TB",
+      "price": "69.99",
+      "stock": 105,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-04-01T10:00:00Z",
+      "updated_at": "2024-04-01T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 93,
+    "fields": {
+      "category": 1,
+      "name": "Блок питания 650W",
+      "slug": "blok-pitaniya-650w",
+      "description": "Мощный блок питания для компьютера",
+      "price": "79.99",
+      "stock": 50,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-04-02T10:00:00Z",
+      "updated_at": "2024-04-02T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 94,
+    "fields": {
+      "category": 1,
+      "name": "Видеокарта RTX 4080",
+      "slug": "videokarta-rtx-4080",
+      "description": "Мощная видеокарта для игр и работы",
+      "price": "999.99",
+      "stock": 12,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-04-03T10:00:00Z",
+      "updated_at": "2024-04-03T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 95,
+    "fields": {
+      "category": 1,
+      "name": "Процессор Intel Core i9",
+      "slug": "processor-intel-core-i9",
+      "description": "Флагманский процессор Intel",
+      "price": "599.99",
+      "stock": 18,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-04-04T10:00:00Z",
+      "updated_at": "2024-04-04T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 96,
+    "fields": {
+      "category": 1,
+      "name": "Оперативная память DDR5 32GB",
+      "slug": "operativnaya-pamyat-ddr5-32gb",
+      "description": "Быстрая оперативная память DDR5",
+      "price": "149.99",
+      "stock": 45,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-04-05T10:00:00Z",
+      "updated_at": "2024-04-05T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 97,
+    "fields": {
+      "category": 1,
+      "name": "Материнская плата B850",
+      "slug": "materinskaya-plata-b850",
+      "description": "Надежная материнская плата",
+      "price": "249.99",
+      "stock": 0,
+      "image": "",
+      "is_available": false,
+      "created_at": "2024-04-06T10:00:00Z",
+      "updated_at": "2024-04-06T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 98,
+    "fields": {
+      "category": 1,
+      "name": "Корпус компьютера ATX",
+      "slug": "korpus-komp-ytera-atx",
+      "description": "Просторный корпус для сборки ПК",
+      "price": "119.99",
+      "stock": 35,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-04-07T10:00:00Z",
+      "updated_at": "2024-04-07T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 99,
+    "fields": {
+      "category": 1,
+      "name": "Система охлаждения Noctua",
+      "slug": "sistema-okhlazhdenia-noctua",
+      "description": "Эффективная система охлаждения CPU",
+      "price": "89.99",
+      "stock": 55,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-04-08T10:00:00Z",
+      "updated_at": "2024-04-08T10:00:00Z",
+      "is_active": true
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 100,
+    "fields": {
+      "category": 4,
+      "name": "Крепление для монитора",
+      "slug": "kreplenie-dlya-monitora",
+      "description": "Универсальное крепление для мониторов",
+      "price": "39.99",
+      "stock": 110,
+      "image": "",
+      "is_available": true,
+      "created_at": "2024-04-09T10:00:00Z",
+      "updated_at": "2024-04-09T10:00:00Z",
+      "is_active": true
+    }
+  }
+]
