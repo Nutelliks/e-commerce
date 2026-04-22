@@ -37,6 +37,7 @@ class CategoryViewSet(CacheMixin, viewsets.ReadOnlyModelViewSet):
 class ProductViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Product.objects.filter(is_active=True)
     serializer_class = ProductSerializer
+    lookup_field = "slug"
     filterset_class = ProductFilter
     search_fields = ["name", "description"]
     ordering_fields = ["price", "created_at", "name"]

@@ -1,5 +1,5 @@
 import django_filters
-from django.core.exceptions import ValidationError
+from rest_framework.exceptions import ValidationError
 from .models import Product
 
 
