@@ -34,10 +34,19 @@ class CategoryViewSet(CacheMixin, viewsets.ReadOnlyModelViewSet):
         return Response(data)
 
 
-class ProductViewSet(viewsets.ReadOnlyModelViewSet):
+class ProductViewSet(CacheMixin, viewsets.ReadOnlyModelViewSet):
     queryset = Product.objects.filter(is_active=True)
     serializer_class = ProductSerializer
     lookup_field = "slug"
+    lookup_url_kwarg = "product_slug"
     filterset_class = ProductFilter
     search_fields = ["name", "description"]
     ordering_fields = ["price", "created_at", "name"]
+
+
+    def retrieve(self, request, *args, **kwargs):
+        builder = self.get_serializer(self.get_object()).data
+        slug = self.kwargs[self.lookup_url_kwarg]
+        data = self.get_set_cache(f"products:detail:{slug}", 60 * 15, builder)
+        
+        return Response(data)
