@@ -43,10 +43,30 @@ class ProductViewSet(CacheMixin, viewsets.ReadOnlyModelViewSet):
     search_fields = ["name", "description"]
     ordering_fields = ["price", "created_at", "name"]
 
+    def list(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+
+        params = request.query_params.lists()
+        cache_name = "products:list:" + ":".join(
+            f"{k}={",".join(sorted(v))}" for k, v in sorted(params)
+        )
+
+        def builder():
+            page = self.paginate_queryset(queryset)
+
+            if page is not None:
+                data = self.get_serializer(page, many=True).data
+                return self.get_paginated_response(data).data
+
+            data = self.get_serializer(queryset, many=True).data
+            return data
+
+        data = self.get_set_cache(cache_name, 60 * 15, builder)
+        return Response(data)
 
     def retrieve(self, request, *args, **kwargs):
         builder = lambda: self.get_serializer(self.get_object()).data
         slug = self.kwargs[self.lookup_url_kwarg]
         data = self.get_set_cache(f"products:detail:{slug}", 60 * 15, builder)
-        
+
         return Response(data)
