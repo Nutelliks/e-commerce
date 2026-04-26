@@ -167,7 +167,7 @@ AUTH_USER_MODEL = 'users.User'
 
 
 
-# --- REST-FRAMEWORK CONFIG ---
+# REST-FRAMEWORK CONFIG
 
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': [
@@ -177,4 +177,22 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_PAGINATION_CLASS': 'common.pagination.StandardResultsSetPagination',
 
+}
+
+
+
+# LOGGING 
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+        }
+    },
+    "root": {
+        "handlers": ["console"],
+        "level": "WARNING",
+    }
 }
