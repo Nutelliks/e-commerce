@@ -186,13 +186,26 @@ REST_FRAMEWORK = {
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
+    "formatters": {
+        "verbose": {
+            "format": "{asctime} {levelname} {name} {module} {lineno} {message}",
+            "style": "{",
+        },
+    },
     "handlers": {
         "console": {
             "class": "logging.StreamHandler",
-        }
+        },
+        "file": {
+            "class": "logging.FileHandler",
+            "filename": BASE_DIR / "logs/django.log",
+            "encoding": "utf-8",
+            "level": "INFO",
+            "formatter": "verbose",
+        },
     },
     "root": {
-        "handlers": ["console"],
-        "level": "WARNING",
+        "handlers": ["file"],
+        "level": "INFO",
     }
 }
