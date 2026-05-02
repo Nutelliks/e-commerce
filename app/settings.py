@@ -188,13 +188,23 @@ LOGGING = {
     "disable_existing_loggers": False,
     "formatters": {
         "verbose": {
-            "format": "{asctime} {levelname} {name} {module} {lineno} {message}",
+            "format": "[{asctime}] {levelname} {name} {module} {lineno} {message}",
             "style": "{",
         },
+        "simple": {
+            "format": "[{asctime}] {levelname} {message}",
+            "style": "{"
+        },
+        "detailed": {
+            "format": "{levelname} {asctime} {module} {process:d} {thread:d} {message}",
+            "style": "{"
+        }
     },
     "handlers": {
         "console": {
             "class": "logging.StreamHandler",
+            "level": "DEBUG",
+            "formatter": "simple",
         },
         "file": {
             "class": "logging.FileHandler",
@@ -203,9 +213,33 @@ LOGGING = {
             "level": "INFO",
             "formatter": "verbose",
         },
+        "error_file": {
+            "class": "logging.FileHandler",
+            "filename": BASE_DIR / "logs/errors.log",
+            "encoding": "utf-8",
+            "level": "ERROR",
+            "formatter": "detailed"
+        }
+    },
+    "loggers": {
+        "django.request": {
+            "handlers": ["console", "file", "error_file"],
+            "level": "WARNING",
+            "propagate": False
+        },
+        "catalog": {
+            "handlers": ["file", "error_file"],
+            "level": "INFO",
+            "propagate": False
+        },
+        "users": {
+            "handlers": ["file", "error_file"],
+            "level": "INFO",
+            "propagate": False
+        }
     },
     "root": {
-        "handlers": ["file"],
-        "level": "INFO",
+        "handlers": ["console", "error_file"],
+        "level": "WARNING",
     }
 }
