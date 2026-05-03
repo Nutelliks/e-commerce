@@ -17,6 +17,7 @@ class Category(BaseModel):
     image = models.ImageField(
         upload_to="category_images/", blank=True, null=True, verbose_name="Изображение"
     )
+    is_active = models.BooleanField(default=True, verbose_name="Активно")
 
     class Meta:
         db_table = "categories"
@@ -45,6 +46,7 @@ class Product(BaseModel):
         upload_to="product_images/", blank=True, null=True, verbose_name="Изображение"
     )
     is_available = models.BooleanField(default=True, verbose_name="Доступно")
+    is_active = models.BooleanField(default=True, verbose_name="Активно")
 
     class Meta:
         db_table = "products"
