@@ -4,7 +4,7 @@ from core.models import BaseModel
 
 
 class Cart(BaseModel):
-    user = models.OneToOneField(to="users.User", blank=True, null=True)
+    user = models.OneToOneField(to="users.User", on_delete=models.SET_NULL, blank=True, null=True)
     session_key = models.CharField(max_length=40, unique=True, blank=True, null=True)
 
     class Meta:
@@ -16,10 +16,10 @@ class Cart(BaseModel):
 
 class CartItem(models.Model):
     cart = models.ForeignKey(
-        to="cart.Carts", on_delete=models.CASCADE, related_name="cart_items"
+        to="carts.Cart", on_delete=models.CASCADE, related_name="cart_items"
     )
     product = models.ForeignKey(
-        to="catalog.Products", on_delete=models.SET_NULL, null=True
+        to="catalog.Product", on_delete=models.SET_NULL, null=True
     )
     quantity = models.PositiveSmallIntegerField(default=1, verbose_name="Количество")
     price_snapshot = models.DecimalField(
