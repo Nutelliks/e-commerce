@@ -1,10 +1,12 @@
 from django.db import models
-
+from django.db.models import F, Sum
 from core.models import BaseModel
 
 
 class Cart(BaseModel):
-    user = models.OneToOneField(to="users.User", on_delete=models.SET_NULL, blank=True, null=True)
+    user = models.OneToOneField(
+        to="users.User", on_delete=models.SET_NULL, blank=True, null=True
+    )
     session_key = models.CharField(max_length=40, unique=True, blank=True, null=True)
 
     class Meta:
@@ -16,6 +18,13 @@ class Cart(BaseModel):
     def __str__(self):
         return f"{self.user.username if self.user else "Anonymous user"}'s cart"
 
+    def get_total_price(self):
+        total_price = self.cart_items.aggregate(
+            total_price=Sum(F("price_snapshot") * F("quantity"))
+        ).get("total_price")  # сумма всех CartItem
+
+        return total_price
+    
 
 class CartItem(models.Model):
     cart = models.ForeignKey(
@@ -31,11 +40,18 @@ class CartItem(models.Model):
 
     class Meta:
         unique_together = ("cart", "product")
-        db_table = 'cart_items'
+        db_table = "cart_items"
         managed = True
-        verbose_name = 'CartItem'
-        verbose_name_plural = 'CartItems'
+        verbose_name = "CartItem"
+        verbose_name_plural = "CartItems"
 
     def __str__(self):
         return f"{self.product.name} - {self.quantity} - {self.price_snapshot}"
+
+    def get_subtotal(self):
+        return self.price_snapshot * self.quantity
     
+    def save(self, *args, **kwargs):
+        if not self.price_snapshot:
+            self.price_snapshot = self.product.price
+        return super().save(*args, **kwargs)
