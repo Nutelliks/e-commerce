@@ -13,6 +13,9 @@ class Cart(BaseModel):
         verbose_name = "Cart"
         verbose_name_plural = "Carts"
 
+    def __str__(self):
+        return f"{self.user.username if self.user else "Anonymous user"}'s cart"
+
 
 class CartItem(models.Model):
     cart = models.ForeignKey(
@@ -25,3 +28,14 @@ class CartItem(models.Model):
     price_snapshot = models.DecimalField(
         max_digits=7, decimal_places=2, verbose_name="Зафиксированная цена"
     )
+
+    class Meta:
+        unique_together = ("cart", "product")
+        db_table = 'cart_items'
+        managed = True
+        verbose_name = 'CartItem'
+        verbose_name_plural = 'CartItems'
+
+    def __str__(self):
+        return f"{self.product.name} - {self.quantity} - {self.price_snapshot}"
+    
