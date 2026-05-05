@@ -25,6 +25,13 @@ class Cart(BaseModel):
 
         return total_price
     
+    def get_items_count(self):
+        items_count = self.cart_items.aggregate(
+            items_count=Sum(F("quantity"))
+        ).get("items_count")
+
+        return items_count
+    
 
 class CartItem(models.Model):
     cart = models.ForeignKey(
