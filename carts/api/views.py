@@ -9,7 +9,7 @@ from ..utils import get_or_create_cart
 
 
 class CartRetrieveAPIView(RetrieveAPIView):
-    queryset = Cart.objects.all().prefetch_related("cart_items")
+    queryset = Cart.objects.all().prefetch_related("items")
     serializer_class = CartSerializer
 
     def get_object(self):

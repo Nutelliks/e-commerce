@@ -13,8 +13,8 @@ def get_or_create_cart(request):
         user_cart, _ = Cart.objects.get_or_create(user=user)
 
         if anon_cart != user_cart:
-            for item in anon_cart.cart_items.all():
-                existing = user_cart.cart_items.filter(product=item.product).first()
+            for item in anon_cart.items.all():
+                existing = user_cart.items.filter(product=item.product).first()
 
                 if existing:
                     existing.quantity += item.quantity

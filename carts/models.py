@@ -19,14 +19,14 @@ class Cart(BaseModel):
         return f"{self.user.username if self.user else "Anonymous user"}'s cart"
 
     def get_total_price(self):
-        total_price = self.cart_items.aggregate(
+        total_price = self.items.aggregate(
             total_price=Sum(F("price_snapshot") * F("quantity"))
         ).get("total_price")  # сумма всех CartItem
 
         return total_price
     
     def get_items_count(self):
-        items_count = self.cart_items.aggregate(
+        items_count = self.items.aggregate(
             items_count=Sum(F("quantity"))
         ).get("items_count")
 
@@ -35,7 +35,7 @@ class Cart(BaseModel):
 
 class CartItem(models.Model):
     cart = models.ForeignKey(
-        to="carts.Cart", on_delete=models.CASCADE, related_name="cart_items"
+        to="carts.Cart", on_delete=models.CASCADE, related_name="items"
     )
     product = models.ForeignKey(
         to="catalog.Product", on_delete=models.SET_NULL, null=True
