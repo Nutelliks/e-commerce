@@ -1,5 +1,5 @@
 from django.urls import path, include
-from .api.urls import routers
+from .api.urls import router
 
 
 app_name = 'carts'
@@ -7,4 +7,4 @@ urlpatterns = [
 
 ]
 
-urlpatterns += routers
+urlpatterns += router.urls

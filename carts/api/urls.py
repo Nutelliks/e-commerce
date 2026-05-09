@@ -1,9 +1,6 @@
-from django.urls import path
-from .views import CartRetrieveAPIView, CartAddAPIView, CartRemoveAPIView
+from rest_framework.routers import SimpleRouter
+from .views import CartViewSet
 
+router = SimpleRouter()
 
-routers = [
-    path('cart/', CartRetrieveAPIView.as_view(), name="get_cart"),
-    path('cart/add/', CartAddAPIView.as_view(), name="add_cart"),
-    path('cart/remove/', CartRemoveAPIView.as_view(), name='remove_cart')
-]
+router.register('cart', CartViewSet, basename='cart')
