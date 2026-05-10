@@ -27,8 +27,8 @@ class CartViewSet(GenericViewSet):
         serializer = AddToCartSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
 
-        product_id = serializer.validated_data.get("product_id")
-        quantity = serializer.validated_data.get("quantity")
+        product_id = serializer.validated_data["product_id"]
+        quantity = serializer.validated_data["quantity"]
 
         product = get_object_or_404(Product, id=product_id, is_active=True)
         cart = self.get_object()
@@ -51,8 +51,8 @@ class CartViewSet(GenericViewSet):
         serializer = DeleteFromCartSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
 
-        product_id = serializer.validated_data.get("product_id")
-        quantity = serializer.validated_data.get("quantity")
+        product_id = serializer.validated_data["product_id"]
+        quantity = serializer.validated_data["quantity"]
 
         product = get_object_or_404(Product, id=product_id, is_active=True)
         cart = self.get_object()
