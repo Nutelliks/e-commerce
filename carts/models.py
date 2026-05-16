@@ -48,7 +48,6 @@ class CartItem(models.Model):
     class Meta:
         unique_together = ("cart", "product")
         db_table = "cart_items"
-        managed = True
         verbose_name = "CartItem"
         verbose_name_plural = "CartItems"
 
