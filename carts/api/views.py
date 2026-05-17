@@ -5,7 +5,7 @@ from django.shortcuts import get_object_or_404
 from .serializers import CartSerializer, AddToCartSerializer, DeleteFromCartSerializer
 from ..models import CartItem
 from catalog.models import Product
-from ..utils import get_or_create_cart
+from ..services import get_or_create_cart
 
 
 class CartViewSet(GenericViewSet):
